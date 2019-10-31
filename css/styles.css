@@ -29,12 +29,20 @@ li {
 }
 
 @media screen and (max-width: 30rem) {
-    h1 {
-        color:darkcyan
+    header,
+    main,
+    footer {
+        flex-direction: column;
     }
 }
 
 .flexbox {
     display: flex;
-/*    flex-direction: column*/
+    align-items: center;
+    flex-direction: column
+}
+
+header nav ul {
+    display:flex;
+    justify-content: flex-end;
 }
