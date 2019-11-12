@@ -5,9 +5,11 @@ body {
     
 }
 
+/*
 li {
     color: yellow;
 }
+*/
 
 .red-span {
     color: red;
@@ -29,20 +31,19 @@ li {
 */
 }
 
+.bordered {
+    padding: 10px 10px 10px 10px;
+    border: 5px solid;
+}
+
 @media screen and (max-width: 30rem) {
 
     header,
     main,
     footer {
+        display: flex;
         flex-direction: column;
     }
-}
-
-.flexbox {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column
 }
 
 header nav ul {
@@ -68,4 +69,22 @@ a {
 
 a:hover {
     color: crimson
+}
+
+main {
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.multicolumn_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space_around {
+    display: flex;
+    justify-content: space-around;
 }
